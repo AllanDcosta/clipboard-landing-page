@@ -1,0 +1,497 @@
+:root{
+    --primar-Strong-Cyan: hsl(171, 77%, 40%);
+    --primary-Light-Blue: hsl(233, 100%, 66%);
+
+    
+    --hover-primar-Strong-Cyan: hsl(171, 68%, 47%);
+    --hover-primary-Light-Blue: hsl(233, 100%, 72%);
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --button-border-bottom-1:hsl(171, 77%, 33%);
+    --button-border-bottom-2:hsl(233, 69%, 45%);
+
+    --font-family: "Bai Jamjuree";
+    --line-height:1.5em;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height);
+}
+
+body p{
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+/* main section*/
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr ;
+    grid-template-areas: "main-logo main-logo"
+                         "h1 h1"
+                         "p p"
+                         "button-1 button-2";
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-logo{
+    grid-area: main-logo;
+    text-align: center;
+    background-image: url(images/bg-header-desktop.png);
+}
+
+.main-logo i{
+    width: fit-content;
+    margin-top:9rem;
+    margin-bottom: 3rem;
+}
+
+.icon-logo{
+    color: var(--primar-Strong-Cyan);
+}
+
+h1{
+    margin-top: 0;
+    grid-area: h1;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+
+main p{
+    grid-area: p;
+    margin-top: -22px;
+    padding:1% 26%;
+}
+
+.button1{
+    grid-area: button-1;
+    padding-left:67%;
+    margin-left: -20px;
+}
+
+.download-button-1{
+    width: 200px;
+    margin: 2% 10%;
+    padding:5%;
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: 1px solid var(--primar-Strong-Cyan);
+    border-bottom: 2px solid var(--button-border-bottom-1);
+    background-color:  var(--primar-Strong-Cyan);
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.button2{
+    grid-area: button-2;
+    padding-right:67%;
+    margin-left: -15px;
+}
+
+.download-button-2 {
+    width: 200px;
+    margin: 2% 10%;
+    padding: 5%;
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: 1px solid var(--primary-Light-Blue);
+    border-bottom: 2px solid var(--button-border-bottom-2);
+    background-color:  var(--primary-Light-Blue);
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.download-button-1:hover{
+    border: 1px solid var(--hover-primar-Strong-Cyan);
+    background-color:  var(--hover-primar-Strong-Cyan);
+    border-bottom: 2px solid hsl(171, 76%, 38%);
+    cursor: pointer;
+}
+
+.download-button-2:hover{
+    border: 1px solid var(--hover-primary-Light-Blue);
+    background-color:  var(--hover-primary-Light-Blue);
+    border-bottom: 2px solid hsl(233, 47%, 52%);
+    cursor: pointer;
+}
+
+/* key-features */
+
+h2{
+    font-family: var(--font-family);
+    color:var(--Dark-Grayish-Blue);
+    padding-top: 6.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.key-features-head p{
+    padding:1em 20rem;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+.key-features-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:3rem 0;
+}
+
+.computer img{
+    margin-left: -90px;
+}
+
+h4{
+    padding: 2rem 12rem 0 6rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.feature-list p{
+    padding: 0 12rem 0 6rem;
+    margin-top: -22px;
+    font-weight: 400;
+    color:var(--Grayish-Blue);
+    text-align: left;
+}
+
+
+/*features section*/
+
+#features-2 p{
+    text-align: center;
+}
+
+#features-1 p{
+    text-align: center;
+    padding: 0 20rem;
+}
+
+.image-device img{
+    padding: 4rem 13.6rem 1rem;
+}
+
+.features-2-icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.features-2-icons img{
+    padding:3rem 12.6rem 0;
+}
+
+.features-2-icons p{
+    padding: 0 2rem;
+}
+
+.icon-1 img{
+  padding-top: 2.5rem;
+}
+
+h5{
+    font-size: larger;
+    color: var(--Dark-Grayish-Blue);
+}
+
+/*press*/
+
+#press{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+/*downloads*/
+#downloads{
+    padding-bottom: 5rem;
+}
+#downloads p{
+    margin-top: -22px;
+    padding:1% 26%;
+}
+
+.downloads-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.download-2nd-button{
+    padding-left:67%;
+    margin-left: -20px;
+}
+
+.download-3rd-button{
+    padding-right:67%;
+    margin-left: -15px;
+}
+
+/*footer*/
+
+#footer-1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "footer-logo faq privacy guide sm-logo"
+                         "footer-logo contact-us p-kit p-kit sm-logo";
+    margin-top: 5rem;   
+    background-color: rgb(238, 238, 238);                      
+}
+
+.footer-logo{
+    grid-area: footer-logo;
+}
+
+.footer-logo, .icon-logo{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.faq{
+    grid-area: faq;
+    margin:0;
+    padding:0;
+}
+
+.privacy{
+    grid-area: privacy;
+    margin:0;
+    padding:0;
+}
+
+.guide{
+    grid-area: guide ;
+    margin:0;
+    padding:0;
+}
+
+.sm-logo{
+    grid-area: sm-logo;
+    text-align: center;
+    padding:2rem;
+}
+
+.sm-logo i{
+    padding:0 1rem;
+}
+
+.contact-us{
+    grid-area: contact-us;
+    margin:0;
+    padding:0;
+}
+
+.p-kit{
+    grid-area: p-kit;
+    margin:0;
+    padding:0;
+}
+
+.faq:hover, .privacy:hover, .guide:hover, .sm-logo i:hover, .contact-us:hover, .p-kit:hover{
+    color: var(--primar-Strong-Cyan);
+    cursor: pointer;
+}
+
+footer{
+    font-size: smaller;
+    text-align: center;
+}
+
+@media (max-width:950px){
+    
+ /* main */
+    main{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: "main-logo"
+                             "h1"
+                             "p"
+                             "button-1"
+                             "button-2";
+        text-align: center;
+    }
+
+    h1{
+        padding:0 4rem ;
+    }
+
+    main p{
+        padding:5rem 4.8rem  ;
+    }
+    .button1{
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .button2{
+        padding-right: 0;
+        margin:0;
+    }
+
+    .download-button-1, .download-button-2{
+        width:80%;
+        padding:3%;
+        font-size: large;
+    }
+
+ /*key-features*/
+
+ .key-features-head p{
+    padding:1em 4em 4em;
+
+}
+
+.key-features-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:3rem 0;
+    text-align: center;
+    margin-top: -16px;
+}
+
+.computer img{
+    padding: 0 1em;
+    width: 80%;
+    margin-left: 0;
+}
+
+h4{
+    text-align: center;
+    padding:0;
+}
+
+.feature-list p{
+    padding: 0 4em;
+    text-align: center;
+}
+
+/*features section*/
+
+#features-1 p{
+    padding:1em 4em 4em; 
+}
+
+.image-device img{
+    padding: 0 2em;
+    width: 80%;
+    margin-left: 0;
+}
+
+.features-2-icons{
+    display: grid;
+    grid-template-columns: 1fr;   
+}
+
+
+.features-2-icons img{
+    padding:3rem 13.54rem 0;
+}
+
+/*press*/
+
+#press{
+    display: grid;
+    grid-template-columns:1fr;
+}
+
+#press img{
+    padding: 3rem;
+}
+
+/*downloads*/
+
+.downloads-button{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#downloads p{
+    padding:5rem 4.8rem;
+    text-align: center;
+}
+
+.download-2nd-button{
+    padding-left: 0;
+    margin: 0;
+}
+
+.download-3rd-button{
+    padding-right: 0;
+    margin:0;
+}
+
+/*footer*/
+
+#footer-1
+    {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 0.17fr 0.17fr 0.17fr 0.17fr 0.17fr 0.17fr;
+        grid-template-areas: "footer-logo"
+                             "faq"
+                             "contact-us"
+                             "privacy"
+                             "p-kit"
+                             "guide"
+                             "sm-logo";
+        text-align: center;
+    }
+}
+
+@media (min-width:950px) and (max-width:1230px){
+    .button1{
+        padding:0 1em 0 15rem;
+    }
+    
+.button2{
+    padding:0 15rem 0 1em ;
+}
+
+h4{
+    padding: 2rem 0 0 4rem;
+}
+
+.feature-list p{
+    padding: 0 0rem 0 4rem;
+    margin-top: -22px;
+}
+
+.image-device img{
+    padding: 4rem 1rem 0;
+}
+.features-2-icons img{
+    padding:3rem;
+}
+
+#downloads p{
+text-align: center;
+}
+
+.download-2nd-button{
+    padding:0 2.5rem 0 16.5rem ;
+}
+
+.download-3rd-button{
+    padding:0 16rem 0 2rem ;
+}
+
+}
